@@ -55,7 +55,7 @@ export class ZepApi implements ICredentialType {
 	test: ICredentialTestRequest = {
 		request: {
 			baseURL: '={{!$credentials.cloud ? $credentials.apiUrl : "https://api.getzep.com"}}',
-			url: '={{!$credentials.cloud ? "/api/v1/collection" : "/api/v2/collections"}}',
+			url: '/api/v2/collections',
 		},
 	};
 }
